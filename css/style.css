@@ -1,0 +1,523 @@
+@charset "UTF-8";
+/*GENERALES*/
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=BenchNine&family=Exo:wght@400;800&family=Josefin+Sans:wght@400;700&family=Mochiy+Pop+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*IMPORTANDO FUENTES*/
+/*VARIABLES*/
+/*Colores*/
+/*Tamaños de fuente*/
+/*Tipos de fuente*/
+/*Padding*/
+/*MAPS*/
+/*MIXINS*/
+/*CONDICIONALES*/
+/*BUCLES*/
+/*EXTEND*/
+.header .navegacion .lista-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.seccion-b .formulario, .seccion-b .mapa, .main .caja-imagen-nosotros, .main .caja-texto-nosotros, .main .caja-imagen-index, .main .caja-texto-index {
+  border: 7px solid #000000;
+  border-radius: 60px;
+}
+
+.seccion-a .titulo, .main .titulo {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.parrafo-rojo {
+  color: #9A3B3B;
+}
+
+.seccion-b .parrafo-seccion-b, .seccion-b .titulo-seccion-b {
+  font-family: "Mochiy Pop One", sans-serif;
+  text-align: center;
+  -webkit-text-stroke: 1px #000000;
+}
+
+/*HEADER - Desktop*/
+.header {
+  background-color: #9A3B3B;
+}
+.header .logo-pizzeria {
+  padding: 20px 0;
+  width: 100%;
+}
+.header .navegacion {
+  height: 100%;
+}
+.header .navegacion .lista-header {
+  height: 100%;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 20px 0;
+  font-size: 20px;
+  font-family: "Mochiy Pop One", sans-serif;
+}
+.header .navegacion .lista-header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*MAIN - Desktop*/
+.main {
+  background-color: #E2C799;
+  padding: 35px 0;
+}
+.main .titulo {
+  color: #000000;
+}
+.main .parrafo-p {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+/*INICIO - Desktop*/
+.seccion-p {
+  padding: 40px 0;
+  font-family: "Exo", sans-serif;
+  text-align: center;
+  background-image: url(../img/index/pizza-imagen-principal.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.seccion-p .recuadro-principal {
+  background-color: rgba(217, 217, 217, 0.55);
+  padding: 45px 0;
+}
+.seccion-p .recuadro-principal .titulo-principal {
+  color: #9A3B3B;
+  font-size: 80px;
+  font-weight: 800;
+  -webkit-text-stroke: 1px #E2C799;
+  text-shadow: -10px 10px 4px rgba(0, 0, 0, 0.5);
+}
+.seccion-p .recuadro-principal .lista-principal {
+  color: #E2C799;
+  font-size: 40px;
+  font-weight: 800;
+  -webkit-text-stroke: 1px #000000;
+  list-style-type: none;
+}
+.seccion-p .recuadro-principal .lista-principal li {
+  text-shadow: -5px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.main .caja-texto-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #C08261;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  height: 250px;
+  width: 100%;
+  margin: 30px 0;
+  padding: 30px;
+}
+.main .caja-imagen-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #C08261;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  height: 250px;
+  width: 100%;
+  margin: 30px 0;
+}
+
+/*INDEX - Móvil*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .seccion-p .recuadro-principal .titulo-principal {
+    font-size: 40px;
+  }
+  .seccion-p .recuadro-principal .lista-principal {
+    font-size: 15px;
+    padding: 0;
+    margin-top: 30px;
+  }
+  .main .caja-texto-index {
+    font-size: 15px;
+  }
+  #tarta-index {
+    order: -1;
+  }
+}
+/*GALERÍA - Desktop*/
+main .titulo-galeria-pizzas {
+  margin: 70px 0 20px 0;
+  font-size: 40px;
+  font-family: "Mochiy Pop One", sans-serif;
+  text-align: center;
+}
+main .galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 2px solid #000000;
+  padding: 0;
+  margin: 20px 0 70px 0;
+}
+main .galeria img {
+  width: 100%;
+  height: 100%;
+}
+
+/*GALERÍA - Móvil*/
+@media (min-width: 320px) and (max-width: 480px) {
+  main .titulo-galeria-pizzas {
+    font-size: 30px;
+  }
+  main .galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    border: none;
+  }
+  main .galeria img {
+    border: 3px solid #000000;
+    border-radius: 20px;
+    height: 200px;
+  }
+}
+/*PROMOCIONES - Desktop*/
+.seccion-a {
+  background-color: #6f6048;
+  padding: 35px 0;
+}
+.seccion-a .titulo {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.seccion-a .texto-promociones {
+  background-color: #f2ecbe;
+  padding: 30px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.seccion-a .texto-promociones .titulo-texto-promociones {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.seccion-a .parrafo-seccion-a {
+  font-size: 20px;
+}
+.seccion-a .imagenes-promociones {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding-left: 0;
+}
+.seccion-a .imagenes-promociones img {
+  height: 100%;
+  width: 100%;
+}
+
+/*PROMOCIONES - Móvil*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .seccion-a {
+    padding: 12px;
+  }
+  .seccion-a .titulo-promociones {
+    font-size: 30px;
+  }
+  .seccion-a .titulo {
+    margin-bottom: 30px;
+  }
+  .seccion-a .texto-promociones .titulo-texto-promociones {
+    font-size: 22px;
+  }
+  .seccion-a .parrafo-seccion-a {
+    font-size: 16px;
+  }
+  .seccion-a .imagenes-promociones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0;
+  }
+}
+/*NOVEDADES - Desktop*/
+.main .caja-1-novedades {
+  color: #9A3B3B;
+  text-align: center;
+  font-family: "Mochiy Pop One", sans-serif;
+  background-color: #f2ecbe;
+  font-size: 40px;
+  margin: 20px 0;
+  padding: 30px;
+}
+.main .caja-2-novedades {
+  background-color: #f2ecbe;
+  margin: 20px 0;
+  padding: 30px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.main .caja-2-novedades .caja-t-novedades {
+  font-size: 25px;
+  font-weight: 800;
+}
+.main .caja-2-novedades .caja-p-novedades {
+  font-size: 20px;
+}
+
+/*NOVEDADES - Móvil*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .main .caja-1-novedades {
+    font-size: 30px;
+  }
+  .main .caja-2-novedades .caja-t-novedades {
+    font-size: 22px;
+  }
+  .main .caja-2-novedades .caja-p-novedades {
+    font-size: 16px;
+  }
+}
+/*NOSOTROS - Desktop*/
+.main .titulo-nosotros {
+  margin: 70px 0 20px 0;
+}
+.main .parrafo-nosotros {
+  margin-bottom: 30px;
+}
+.main .caja-texto-nosotros {
+  background-color: #C08261;
+  padding: 30px;
+}
+.main .caja-texto-nosotros .titulo-caja-nosotros {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: 28px;
+  text-align: center;
+}
+.main .caja-texto-nosotros .caja-p-nosotros {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+}
+/*NOSOTROS - Móvil*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .main .titulo-nosotros {
+    margin: 40px 0 20px 0;
+  }
+  .main .parrafo-nosotros {
+    margin-bottom: 30px;
+  }
+  .main .caja-texto-nosotros {
+    border-radius: 30px;
+    background-color: #C08261;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  .main .caja-texto-nosotros .titulo-caja-nosotros {
+    font-size: 24px;
+  }
+  .main .caja-texto-nosotros .caja-p-nosotros {
+    font-size: 16px;
+    text-align: center;
+  }
+  .main .caja-imagen-nosotros {
+    display: none;
+  }
+}
+/*FORMULARIO - Desktop*/
+/*SECCIÓN PRINCIPAL - Desktop*/
+/*SECCIÓN A - Desktop*/
+/*SECCIÓN B - Desktop*/
+.seccion-b {
+  background-color: #a48a5e;
+  padding: 50px 0 75px 0;
+}
+.seccion-b .titulo-seccion-b {
+  font-size: 40px;
+  color: #f2ecbe;
+}
+.seccion-b .parrafo-seccion-b {
+  font-size: 32px;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+.seccion-b .mapa {
+  width: 100%;
+}
+.seccion-b .formulario {
+  background-color: #C08261;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.seccion-b .formulario .titulo-de-formulario {
+  font-size: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 800;
+}
+.seccion-b .formulario .elementos-del-formulario {
+  width: 80%;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.seccion-b .formulario .elementos-del-formulario input {
+  font-size: 20px;
+  width: 70%;
+  background-color: #f2ecbe;
+  border-radius: 20px;
+  text-align: center;
+}
+.seccion-b .formulario .elementos-del-formulario label {
+  font-size: 25px;
+  font-family: "Josefin Sans", sans-serif;
+  width: 30%;
+}
+.seccion-b .formulario .boton-de-formulario {
+  color: #f2ecbe;
+  background-color: #9A3B3B;
+  border-radius: 60px;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: 2px solid #f2ecbe;
+}
+
+.link-tyc {
+  color: #f2ecbe;
+}
+
+/*FOOTER - Desktop*/
+footer {
+  background-color: #9A3B3B;
+  padding: 50px 0 100px 0;
+}
+footer .t-footer {
+  color: #ffffff;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: 22px;
+}
+footer .p-footer {
+  color: #ffffff;
+  font-family: "Actor", sans-serif;
+  font-size: 16px;
+}
+
+/*HEADER - Móvil*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .header .logo-pizzeria {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .header .navegacion {
+    height: 100%;
+  }
+  .header .navegacion .lista-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  .header .navegacion .lista-header li {
+    margin: 10px 0;
+    border-bottom: 1px solid #ffffff;
+    width: 100%;
+    text-align: center;
+  }
+}
+/*MAIN - Móvil*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .main {
+    padding: 0 12px;
+  }
+  .main .parrafo-p {
+    margin-top: 20px;
+  }
+  .main .titulo {
+    font-size: 30px;
+  }
+  .main .parrafo-p {
+    font-size: 20px;
+  }
+}
+/*SECCIÓN PRINCIPAL - Móvil*/
+/*SECCIÓN A - Móvil*/
+/*SECCIÓN B - Móvil*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .seccion-b .titulo-seccion-b {
+    font-size: 30px;
+  }
+  .seccion-b .parrafo-seccion-b {
+    font-size: 20px;
+  }
+  .seccion-b .mapa {
+    width: 100%;
+  }
+  .seccion-b .formulario {
+    padding: 25px;
+  }
+  .seccion-b .formulario .titulo-de-formulario {
+    font-size: 22px;
+    text-align: center;
+  }
+  .seccion-b .formulario .elementos-del-formulario {
+    width: 100%;
+    text-align: center;
+  }
+  .seccion-b .formulario .elementos-del-formulario input {
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .seccion-b .formulario .elementos-del-formulario label {
+    font-size: 18px;
+    width: 100%;
+  }
+  .seccion-b .formulario .boton-de-formulario {
+    border-radius: 60px;
+    width: 100%;
+    padding: 0;
+  }
+  #tyc {
+    font-size: 10px;
+  }
+}
+/*FOOTER - Móvil*/
+@media (min-width: 320px) and (max-width: 480px) {
+  footer {
+    padding: 30px;
+    text-align: center;
+  }
+  footer .t-footer {
+    color: #ffffff;
+    font-size: 14px;
+  }
+  footer .p-footer {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

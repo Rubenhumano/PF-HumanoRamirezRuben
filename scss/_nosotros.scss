@@ -1,0 +1,27 @@
+/*NOSOTROS - Desktop*/
+
+.main{
+    .titulo-nosotros{
+        margin: 70px 0 20px 0;
+    }
+    .parrafo-nosotros{
+        margin-bottom: 30px;
+    }
+    .caja-texto-nosotros{
+        @extend%borde-caja-general;
+        background-color: $color-3;
+        padding: 30px;
+        .titulo-caja-nosotros{
+            font-family: $fuente-principal;
+            font-size: 28px;
+            text-align: center;
+        };
+        .caja-p-nosotros{
+            font-family: $fuente-secundaria;
+            font-size: 20px;
+        };
+    };
+    .caja-imagen-nosotros{
+        @extend%borde-caja-general;
+    };
+}

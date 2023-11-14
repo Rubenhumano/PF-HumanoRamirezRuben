@@ -1,0 +1,45 @@
+/*SECCIÓN B - Móvil*/
+
+@media (min-width: 320px) and (max-width: 480px){
+    .seccion-b{
+        .titulo-seccion-b{
+            font-size: $tamano-titulo-movil;
+        };
+        .parrafo-seccion-b{
+            font-size: $tamano-p-principales-m;
+        };
+        .mapa{
+            @extend%borde-caja-general;
+            width: 100%;
+        };
+        .formulario{
+            padding: 25px;
+            .titulo-de-formulario{
+                font-size: 22px;
+                text-align: center;
+            };
+            .elementos-del-formulario{
+                width: 100%;
+                text-align: center;
+                input{
+                    font-size: 14px;
+                    width: 100%;
+                    border-radius: 10px;
+                };
+                label{
+                    font-size: 18px;
+                    width: 100%;
+                };
+    
+            };
+            .boton-de-formulario{
+                border-radius: 60px;
+                width: 100%;
+                padding: 0;
+            };
+        };
+    };
+    #tyc{
+        font-size: 10px;
+    };
+}

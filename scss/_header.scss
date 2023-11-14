@@ -1,0 +1,25 @@
+/*HEADER - Desktop*/
+
+.header{
+    background-color: map-get($colores, color-1);
+    .logo-pizzeria{
+        padding: 20px 0;
+        width: 100%;
+    }
+    .navegacion{
+        height: 100%;
+        .lista-header{
+            height: 100%;
+            @extend%flex-space-around;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 20px 0;
+            font-size: $tamano-a-header-d;
+            font-family: $fuente-principal;
+            a{
+                color: map-get($colores, color-4);
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+/*MIXINS*/
+
+@mixin flex($display,$direccion,$horizontal,$vertical,$wrap){
+    display: $display;
+    flex-direction: $direccion;
+    justify-content: $horizontal;
+    align-items: $vertical;
+    flex-wrap: $wrap;
+}

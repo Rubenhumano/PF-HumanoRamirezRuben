@@ -1,0 +1,35 @@
+/*PROMOCIONES - Desktop*/
+
+.seccion-a{
+    background-color: #6f6048;
+    padding: 35px 0;
+    .titulo{
+        @extend%titulo;
+        color: $color-4;
+        margin-bottom: 40px;
+    };
+    .texto-promociones{
+        .titulo-texto-promociones{
+            font-size: 30px;
+            text-align: center;
+            font-weight: 800;
+            margin-bottom: 30px;
+        };
+        background-color: $color-6;
+        padding: 30px;
+        font-family: $fuente-secundaria;
+    };
+    .parrafo-seccion-a{
+            font-size: 20px;
+    };
+    .imagenes-promociones{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding-left: 0;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+};

@@ -1,0 +1,26 @@
+/*NOVEDADES - Desktop*/
+
+.main{
+    .caja-1-novedades{
+        color: $color-1;
+        text-align: center;
+        font-family: $fuente-principal;
+        background-color: $color-6;
+        font-size: 40px;
+        margin: 20px 0;
+        padding: 30px;
+    };
+    .caja-2-novedades{
+        background-color: $color-6;
+        margin: 20px 0;
+        padding: 30px;
+        font-family: $fuente-secundaria;
+        .caja-t-novedades{
+            font-size: 25px;
+            font-weight: 800;
+        };
+        .caja-p-novedades{
+            font-size: 20px;
+        };
+    };
+}

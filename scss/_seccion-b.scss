@@ -1,0 +1,62 @@
+/*SECCIÓN B - Desktop*/
+
+.seccion-b{
+    background-color: $color-7;
+    padding: $padding-seccion-b;
+    .titulo-seccion-b{
+        font-size: $tamano-titulo-desktop;
+        @extend%seccion-b-fuentes;
+        color: $color-6;
+    };
+    .parrafo-seccion-b{
+        font-size: $tamano-p-principales-d;
+        @extend%seccion-b-fuentes;
+        color: $color-4;
+        padding-bottom: 30px;
+    };
+    .mapa{
+        @extend%borde-caja-general;
+        width: 100%;
+    };
+    .formulario{
+        background-color: $color-3;
+        @extend%borde-caja-general;
+        padding: $padding-formulario;
+        @include flex(flex,column,center,center,wrap);
+        .titulo-de-formulario{
+            font-size: 30px;
+            font-family: $fuente-secundaria;
+            font-weight: 800;
+        };
+        .elementos-del-formulario{
+            width: 80%;
+            margin: 10px 0;
+            @include flex(flex,row,space-around,center,wrap);
+            input{
+                font-size: 20px;
+                width: 70%;
+                background-color: $color-6;
+                border-radius: 20px;
+                text-align: center;
+            };
+            label{
+                font-size: 25px;
+                font-family: $fuente-secundaria;
+                width: 30%;
+            };
+
+        };
+        .boton-de-formulario{
+            color: $color-6;
+            background-color: $color-1;
+            border-radius: 60px;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 16px;
+            border: 2px solid $color-6;
+        };
+    };
+};
+.link-tyc{
+    color: $color-6;
+};

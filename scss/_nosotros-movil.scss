@@ -1,0 +1,28 @@
+/*NOSOTROS - Móvil*/
+
+@media (min-width: 320px) and (max-width: 480px){
+    .main{
+        .titulo-nosotros{
+            margin: 40px 0 20px 0;
+        }
+        .parrafo-nosotros{
+            margin-bottom: 30px;
+        }
+        .caja-texto-nosotros{
+            border-radius: 30px;
+            background-color: $color-3;
+            padding: 20px;
+            margin-bottom: 30px;
+            .titulo-caja-nosotros{
+                font-size: 24px;
+            };
+            .caja-p-nosotros{
+                font-size: 16px;
+                text-align: center;
+            };
+        };
+        .caja-imagen-nosotros{
+            display: none;
+        };
+    }
+}

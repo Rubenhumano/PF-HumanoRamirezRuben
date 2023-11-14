@@ -1,0 +1,16 @@
+/*MAIN - Móvil*/
+
+@media (min-width: 320px) and (max-width: 480px){
+    .main{
+        padding: 0 12px;
+        .parrafo-p{
+            margin-top: 20px;
+        }
+        .titulo{
+            font-size: $tamano-titulo-movil;
+        }
+        .parrafo-p{
+            font-size: $tamano-p-principales-m;
+        }
+    }
+}

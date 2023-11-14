@@ -1,0 +1,35 @@
+/*EXTEND*/
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-space-around{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+%borde-caja-general{
+    border: 7px solid map-get($colores, color-5);
+    border-radius: 60px;
+}
+
+%titulo{
+    font-family: $fuente-principal;
+    font-size: $tamano-titulo-desktop;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.parrafo-rojo{
+    color: $color-1;
+}
+
+%seccion-b-fuentes{
+    font-family: $fuente-principal;
+    text-align: center;
+    -webkit-text-stroke: 1px $color-5;
+}

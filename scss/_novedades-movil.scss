@@ -1,0 +1,17 @@
+/*NOVEDADES - Móvil*/
+
+@media (min-width: 320px) and (max-width: 480px){
+    .main{
+        .caja-1-novedades{
+            font-size: 30px;
+        };
+        .caja-2-novedades{
+            .caja-t-novedades{
+                font-size: 22px;
+            };
+            .caja-p-novedades{
+                font-size: 16px;
+            };
+        };
+    }
+}

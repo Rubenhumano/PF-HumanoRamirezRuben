@@ -1,0 +1,15 @@
+/*MAIN - Desktop*/
+
+.main{
+    background-color: $color-2;
+    padding: $padding-main;
+    .titulo{
+        @extend%titulo;
+        color: $color-5;
+    }
+    .parrafo-p{
+        font-family: $fuente-principal;
+        font-size: $tamano-p-principales-d;
+        text-align: center;
+    }
+}

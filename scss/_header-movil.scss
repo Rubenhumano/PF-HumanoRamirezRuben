@@ -1,0 +1,24 @@
+/*HEADER - Móvil*/
+
+@media (min-width: 320px) and (max-width: 480px){
+    .header{
+        .logo-pizzeria{
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .navegacion{
+            height: 100%;
+            .lista-header{
+                @include flex(flex,column,space-around,center,wrap);
+                padding: 20px 0;
+                li{
+                    margin: 10px 0;
+                    border-bottom: 1px solid $color-4;
+                    width: 100%;
+                    text-align: center;
+                }
+            };
+        };
+    }
+}

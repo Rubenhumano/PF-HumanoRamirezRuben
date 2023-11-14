@@ -1,0 +1,16 @@
+/*FOOTER - Desktop*/
+
+footer{
+    background-color: $color-1;
+    padding: 50px 0 100px 0;
+    .t-footer{
+        color: $color-4;
+        font-family: $fuente-principal;
+        font-size: 22px;
+    }
+    .p-footer{
+        color: $color-4;
+        font-family: $fuente-5;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,27 @@
+/*PROMOCIONES - Móvil*/
+
+@media (min-width: 320px) and (max-width: 480px){
+    .seccion-a{
+        padding: 12px;
+        .titulo-promociones{
+            font-size: 30px;
+        }
+        .titulo{
+            margin-bottom: 30px;
+        };
+        .texto-promociones{
+            .titulo-texto-promociones{
+                font-size: 22px;
+            };
+        };
+        .parrafo-seccion-a{
+                font-size: 16px;
+        };
+        .imagenes-promociones{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            padding: 0;
+        }
+    };
+}
