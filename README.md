@@ -2,4 +2,4 @@
 
 https://rubenhumano.github.io/PF-HumanoRamirezRuben/
 
-elpatapizza.kesug.com
+http://elpatapizza.kesug.com
